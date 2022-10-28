@@ -1,0 +1,21 @@
+[wordlist]
+type = csv
+location = examplewordlist.csv
+
+[constraints]
+crossword_generation_count = 100000
+
+; A4 paper limitations
+max_height = 60
+max_width = 40
+
+[scoring]
+type = simple
+
+base_score = 10000
+placed_word_bonus = 0
+placed_letter_bonus = 0
+word_crossing_bonus = 100
+missing_word_penalty = 100000
+used_row_penalty = 100
+used_column_penalty = 100
